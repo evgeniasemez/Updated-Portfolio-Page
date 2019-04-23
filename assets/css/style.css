@@ -94,9 +94,20 @@
     margin-top: 6px;
    }
    h2{
-    font: 400 25px 'Merienda One', Helvetica, sans-serif;
+    /* font: 400 25px 'Merienda One', Helvetica, sans-serif; */
     color: black;
-    text-shadow: 3px 3px 3px #998787;
+    /* text-shadow: 3px 3px 3px #998787; */
+    
+
+    font-family: 'Lora', serif;
+
+    font-family: 'Comfortaa', cursive;
+
+    font-family: 'Righteous', cursive;
+
+    font-family: 'Pridi', serif;
+
+
    }
    #myImg {
     border-radius: 5px;
@@ -183,6 +194,15 @@
       margin-top: 28px;
       font-family: 'Lora', serif;
       font-family: 'Comfortaa', cursive;
+  }
+  #myEmail{
+      color: black;
+      font-family: 'Lora', serif;
+      font-family: 'Comfortaa', cursive;
+      font-family: 'Righteous', cursive;
+  }
+  #background{
+      background: white;
   }
 
 
