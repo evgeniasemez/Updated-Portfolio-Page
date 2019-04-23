@@ -11,7 +11,7 @@
  ul li {
     float: left;
     list-style: none;
-    margin-right: 1em; 
+    /* margin-right: 1em;  */
    }
     
    li a {
@@ -35,7 +35,7 @@
    ul li {
     float: left;
     list-style: none;
-    margin-right: 1em;
+    /* margin-right: 1em; */
     font-family: 'KulminoituvaRegular', helvetica, sans-serif;
     font-size: 25px;
     padding: 12px; 
@@ -109,13 +109,13 @@
 
 
    }
-   #myImg {
+   .styleImg {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
   }
   
-  #myImg:hover {opacity: 0.7;}
+  .styleImg:hover {opacity: 0.7;}
   
   /* The Modal (background) */
   .modal {
@@ -204,6 +204,21 @@
   #background{
       background: white;
   }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 33px;
+  }
+  .fa-github{
+    /* background-color: #ffffff99; */
+    border: 3px black;
+    padding: 10px;
+    /* border-radius: 50%; */
+    color: black;
+  }
 
 
   /* 100% Image Width on Smaller Screens */
@@ -212,3 +227,18 @@
       width: 100%;
     }
   }
+  @media screen and (max-width: 980px) {
+        
+}
+@media screen and (max-width: 768px) {
+   
+}
+@media screen and (max-width: 640px) {
+    .nav-link{
+        margin: 0;
+    }
+    #myName{
+        display: block;
+        float: none;
+    }
+}
