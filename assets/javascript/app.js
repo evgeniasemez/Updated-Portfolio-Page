@@ -31,7 +31,7 @@ $("#myImg2").on("click", function () {
     window.location.href = "https://evgeniasemez.github.io/Train-Scheduler/";
 });
 $("#myImg3").on("click", function () {
-    window.location.href = "https://github.com/evgeniasemez/liri-node-app-";
+    window.location.href = "https://thebestproject.herokuapp.com/";
 });
 $("#myImg4").on("click", function () {
     window.location.href = "https://github.com/evgeniasemez/Friend-Finder---Node-and-Express-Servers";
@@ -40,7 +40,7 @@ $("#myImg5").on("click", function () {
     window.location.href = "https://github.com/evgeniasemez/Constructor-Word-Guess";
 });
 $("#myImg6").on("click", function () {
-    window.location.href = "https://github.com/evgeniasemez/Project-2";
+    window.location.href = "https://github.com/evgeniasemez/liri-node-app-";
 });
 
 // Get the <span> element that closes the modal
