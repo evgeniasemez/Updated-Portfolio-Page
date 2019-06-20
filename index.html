@@ -5,17 +5,19 @@
     <meta charset="utf-8">
     <title>Update Portfolio Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
@@ -43,25 +45,58 @@
     <!-- setting the main portfolio body -->
     <div class="container">
         <div class="row">
-            <div class="col-md-6" id="mouseoverImg">
-                <img class="styleImg" id="myImg" src="./assets/images/camylla-battani-784361-unsplash.jpg" alt="Trivia Game" style="width:100%;max-width:500px;margin-top:30px;">
-                <div class="centered" id="firstImg" style="display: none">Trivia Game<a class="fab fa-github" href="https://github.com/evgeniasemez/TriviaGame"
-                        target="_blank" alt=""></a></div>
+            <div class="col-md-6 hoverable" id="mouseoverImg">
+                <img class="styleImg" id="myImg" src="./assets/images/camylla-battani-784361-unsplash.jpg"
+                    alt="Trivia Game" style="width:100%;max-width:500px;margin-top:30px;">
+                <div class="centered showHideToggle" id="firstImg" style="display: none">Trivia Game<a class="fab fa-github"
+                        href="https://github.com/evgeniasemez/TriviaGame" target="_blank" alt=""></a></div>
             </div>
-            <div class="col-md-6" id="mouseoverImg1">
-                <img class="styleImg" id="myImg1" src="./assets/images/brooke-lark-229136-unsplash.jpg" alt="Reciplanner" style="width:100%;max-width:500px;margin-top:30px;">
-                <div class="centered" id="firstImg1" style="display: none">Reciplanner<a class="fab fa-github" href="https://github.com/evgeniasemez/Project-1"
-                        target="_blank" alt=""></a></div>
+            <div class="col-md-6 hoverable" id="mouseoverImg1">
+                <img class="styleImg" id="myImg1" src="./assets/images/brooke-lark-229136-unsplash.jpg"
+                    alt="Reciplanner" style="width:100%;max-width:500px;margin-top:30px;">
+                <div class="centered showHideToggle" id="firstImg1" style="display: none">Reciplanner<a class="fab fa-github"
+                        href="https://github.com/evgeniasemez/Project-1" target="_blank" alt=""></a></div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6" id="mouseoverImg2">
-                <img class="styleImg" id="myImg2" src="./assets/images/ashik-salim-492259-unsplash.jpg" alt="Train Scheduler" style="width:100%;max-width:500px;margin-top:30px;">
-                <div class="centered" id="firstImg2" style="display: none">Train Scheduler<a class="fab fa-github" href="https://github.com/evgeniasemez/Train-Scheduler"
-                        target="_blank" alt=""></a></div>
+            <div class="col-md-6 hoverable" id="mouseoverImg2">
+                <img class="styleImg" id="myImg2" src="./assets/images/ashik-salim-492259-unsplash.jpg"
+                    alt="Train Scheduler" style="width:100%;max-width:500px;margin-top:30px;">
+                <div class="centered showHideToggle" id="firstImg2" style="display: none">Train Scheduler<a class="fab fa-github"
+                        href="https://github.com/evgeniasemez/Train-Scheduler" target="_blank" alt=""></a></div>
             </div>
-            <div class="col-md-6">
-                <img class="styleImg" id="myImg3" src="./assets/images/More-Projects-Coming-Soon.jpg" alt="More Coming Soon" style="width:100%;max-width:500px;margin-top:30px;">
+
+            <div class="col-md-6 hoverable" id="mouseoverImg3">
+                <img class="styleImg" id="myImg3" src="./assets/images/record-portfolio2.jpg"
+                    alt="LIRI" style="width:100%;max-width:500px;margin-top:30px;height: 87%;">
+                <div class="centered showHideToggle" id="firstImg3" style="display: none">LIRI<a class="fab fa-github"
+                        href="https://github.com/evgeniasemez/liri-node-app-" target="_blank" alt=""></a></div>
+            </div>
+
+            <div class="col-md-6 hoverable" id="mouseoverImg4">
+                <img class="styleImg" id="myImg4" src="./assets/images/friendship.jpg"
+                    alt="Friend-Finder" style="width:100%;max-width:500px;margin-top:30px;height: 90%;">
+                <div class="centered showHideToggle" id="firstImg4" style="display: none">Friend-Finder<a class="fab fa-github"
+                        href="https://github.com/evgeniasemez/Friend-Finder---Node-and-Express-Servers" target="_blank" alt=""></a></div>
+            </div>
+
+            <div class="col-md-6 hoverable" id="mouseoverImg5">
+                <img class="styleImg" id="myImg5" src="./assets/images/word_game_portfolio2.jpg"
+                    alt="Constructor-Word-Guess" style="width:100%;max-width:500px;margin-top:30px;height: 91%;">
+                <div class="centered showHideToggle" id="firstImg5" style="display: none">Constructor-Word-Guess<a class="fab fa-github"
+                        href="https://github.com/evgeniasemez/Constructor-Word-Guess" target="_blank" alt=""></a></div>
+            </div>
+
+            <div class="col-md-6 hoverable" id="mouseoverImg6">
+                <img class="styleImg" id="myImg6" src="./assets/images/cut_puppy_portfolio2.jpg"
+                    alt="Sniffer" style="width:100%;max-width:500px;margin-top:30px;height: 92%;">
+                <div class="centered showHideToggle" id="firstImg6" style="display: none">Sniffer<a class="fab fa-github"
+                        href="https://github.com/evgeniasemez/Project-2" target="_blank" alt=""></a></div>
+            </div>
+
+            <div class="col-md-6 hoverable">
+                <img class="styleImg" id="myImg7" src="./assets/images/More-Projects-Coming-Soon.jpg"
+                    alt="More Coming Soon" style="width:100%;max-width:500px;margin-top:30px;">
             </div>
         </div>
 

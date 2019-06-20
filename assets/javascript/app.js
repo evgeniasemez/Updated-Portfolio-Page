@@ -6,29 +6,20 @@ var img = document.getElementById('myImg');
 var modalImg = document.getElementById("img01");
 // var modalImg2 = document.getElementById("img02");
 var captionText = document.getElementById("caption");
+
+// JQuery selectors
+var projectName = ".showHideToggle";
+
 // setting hover
-$("#mouseoverImg").hover(mouseover, mouseaway);
-$("#mouseoverImg1").hover(mouseover1, mouseaway1);
-$("#mouseoverImg2").hover(mouseover2, mouseaway2);
+$(".hoverable").hover(mouseover, mouseaway);
 
 function mouseover() {
-    $("#firstImg").show();
+    $(this).find(projectName).show();
 }
 function mouseaway() {
-    $("#firstImg").hide();
+    $(this).find(projectName).hide();
 }
-function mouseover1() {
-    $("#firstImg1").show();
-}
-function mouseaway1() {
-    $("#firstImg1").hide();
-}
-function mouseover2() {
-    $("#firstImg2").show();
-}
-function mouseaway2() {
-    $("#firstImg2").hide();
-}
+
 
 $("#myImg").on("click", function () {
     window.location.href = "https://evgeniasemez.github.io/TriviaGame/";
@@ -39,12 +30,18 @@ $("#myImg1").on("click", function () {
 $("#myImg2").on("click", function () {
     window.location.href = "https://evgeniasemez.github.io/Train-Scheduler/";
 });
-
-// img.onclick = function () {
-//     modal.style.display = "block";
-//     modalImg.src = this.src;
-//     captionText.innerHTML = this.alt;
-// }
+$("#myImg3").on("click", function () {
+    window.location.href = "https://github.com/evgeniasemez/liri-node-app-";
+});
+$("#myImg4").on("click", function () {
+    window.location.href = "https://github.com/evgeniasemez/Friend-Finder---Node-and-Express-Servers";
+});
+$("#myImg5").on("click", function () {
+    window.location.href = "https://github.com/evgeniasemez/Constructor-Word-Guess";
+});
+$("#myImg6").on("click", function () {
+    window.location.href = "https://github.com/evgeniasemez/Project-2";
+});
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
